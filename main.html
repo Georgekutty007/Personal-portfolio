@@ -28,19 +28,20 @@
                     <h1>Hi there !!<br> I am <span>Georgekutty Titus</span></h1>
                     <h2>I am a passionate computer engineer with a deep interest in designing and implementing
                         innovative solutions to complex problems.</h2>
-                        <div class="signs">
-                            <p>
-                                <i class="fa fa-instagram"></i>
-                                <i class="fa fa-facebook-f"></i>
-                                <i class="fa fa-linkedin"></i>
-                                <i class="fa fa-github"></i>
-                            </p>
-                        </div>
+                    <div class="signs">
+                        <p>
+                            <a href="https://www.instagram.com/k_utty._?igsh=ODR1OWVkml3bmFp"><i class="fa fa-instagram"></i></a>
+                            <a><i class="fa fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/georgekutty-titus-081a60275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                <i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/Georgekutty007"><i class="fa fa-github"></i></a>
+                        </p>
+                    </div>
                 </div>
                 <div class="home-image">
                     <img src="Images/George.jpg" alt="Georgekutty Titus">
                     <div class="btn">
-                        <button>Download Cv</button>
+                        <a href="Document/George.pdf" target="_blank" onclick="downloadCV()"><button>Download CV</button></a>
                     </div>
                 </div>
             </div>
@@ -90,7 +91,7 @@
                     <p>
                         Its an electric vehicle charging station website created using Html , CSS, Javascript and PHP.
                     </p>
-                    <button>Details</button>
+                    <a href="https://github.com/Georgekutty007/Electric-charging-station-evcoonect.git"><button>Details</button></a>
                 </div>
                 <div class="card">
                     <h2>Shopping Cart Website</h2>
@@ -98,7 +99,7 @@
                     <p>
                         Its an Ecommerce Website Made using Nodejs, express and Json and the frontend is made using html and CSS.
                     </p>
-                    <button>Details</button>
+                    <a href="https://github.com/Georgekutty007/Shopcart-nodejs.git"><button>Details</button></a>
                 </div>
             </div>
         </section>
@@ -109,18 +110,28 @@
             <div class="contact-details">
                 <div class="contact-data">
                     <p><a href=""><i class="fa fa-envelope"></i>georgekuttytitus2003@gmail.com</a></p>
-                    <p><a href=""><i class="fa fa-instagram"> Instagram</i></a></p>
+                    <p><a href="https://github.com/Georgekutty007"><i class="fa fa-github"></i> Georgekutty007</a></p>
                 </div>
                 <div class="contact-data">
-                    <p><a href=""><i class="fa fa-linkedin"></i> Linkedin</a></p>
-                    <p><a href=""><i class="fa fa-github"></i> Github</a></p>
+                    <p><a href="https://www.linkedin.com/in/georgekutty-titus-081a60275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <i class="fa fa-linkedin"></i> Linkedin</a></p>
+                    <p><a href="https://www.instagram.com/k_utty._?igsh=ODR1OWVkml3bmFp"><i class="fa fa-instagram"> k_utty._</i></a></p>
+
                 </div>
             </div>
-            </div>
+        </div>
         <div class="footer">
             <p>Made By George | All rights reserved &copy; 2024</p>
         </div>
     </footer>
+    <script>
+        function downloadCV() {
+            var link = document.createElement('a');
+            link.href = 'Document/George.pdf';
+            link.download = 'George.pdf';
+            link.dispatchEvent(new MouseEvent('click'));
+        }
+    </script>
 </body>
 
 </html>
