@@ -260,6 +260,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide navigation links on smaller screens */
+    }
+
     .home {
         flex-direction: column;
         height: auto;
